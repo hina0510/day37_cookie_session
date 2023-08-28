@@ -1,0 +1,10 @@
+<ul>
+    <li>상품 목록</li>
+    <% list.forEach(item=>{console.log(item);%> <!-- 목록 -->
+        <li>
+            <a href="/cookie/save1?id=<%= item.goods_id %>"><%= item.title %></a> : <%= item.price %><br>
+            <a href="/cookie/save2/<%= item.goods_id %>"><%= item.title %></a> : <%= item.price %>
+        </li>
+    <%}) %>
+</ul>
+<a href="/cookie/view_list">선택 상품 확인</a>

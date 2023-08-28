@@ -1,0 +1,11 @@
+quizPopup
+<h3> 공지사항</h3>
+오전 5시까지 업데이트 예정입니다<hr>
+<input type="checkbox" id="chk" onclick="makeCookie()"><!-- 클릭 시 makeCookie 함수 실행 -->
+<label for="chk">하루동안 열지 않음</label>
+<script>
+    function makeCookie(){
+        location.href = "/cookie/makeCookie"; //makeCookie로 쿠키를 만들면 .href 경로로 돌아감
+        window.close();
+    }
+</script>
